@@ -21,17 +21,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
+    //compileOptions {
+    //    sourceCompatibility JavaVersion.VERSION_1_8
+    //    targetCompatibility JavaVersion.VERSION_1_8
+    //}
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
 
     compile 'com.android.support:appcompat-v7:25.2.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta5'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    //compile 'org.elasticsearch:elasticsearch:2.4.4'
     compile 'com.squareup.okhttp3:okhttp:3.6.0'
 }
